@@ -1,2 +1,2 @@
-# ggutil
-util
+some utils to avoid boilerplate code during interview
+
