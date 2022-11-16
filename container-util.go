@@ -44,6 +44,8 @@ func (h *Heap[T]) Push(x any) {
 func (h *Heap[T]) Pop() any {
 	l := len(h.Data) - 1
 	x := h.Data[l]
+	var zeroValue T
+	h.Data[l] = zeroValue
 	h.Data = h.Data[:l]
 	return x
 }
